@@ -5,12 +5,12 @@ const coolGreeting = (person) => {
     return `Greetings ${person.name}, how have you been lately?`
   }
 };
-// const person = {
-//   name: 'Sara',
-//   bio: 'Too cool 4 skool.',
-//   age: 32,
-//   isCool: true
-// }
+const person = {
+  name: 'Sara',
+  bio: 'Too cool 4 skool.',
+  age: 32,
+  isCool: true
+}
 
 // console.log(coolGreeting(person))
 
@@ -18,13 +18,19 @@ const coolGreeting = (person) => {
 const haveBirthday = () => {
 };
 
-const becomeSecretAgent = () => {
+const becomeSecretAgent = (person, spyHandle) => {
+  delete person.name
+  person['spyHandle'] = spyHandle
 };
+// becomeSecretAgent(person, 'hello')
+// console.log(person)
+
 
 const carMaker = () => {
 };
 
-const weAreNotFriends = () => {
+const weAreNotFriends = (person) => {
+
 };
 
 const listHobbies = () => {
